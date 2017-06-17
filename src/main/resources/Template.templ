@@ -1,0 +1,70 @@
+import java.util.Scanner;
+
+public class ##CLASSNAME## {
+
+	private static Scanner scanIn = new Scanner(System.in);
+	
+	public static void main(String[] args)
+	{
+		##BODY##
+	}
+	
+	public static String escribirTexto()
+	{
+		String input;
+	    input = scanIn.nextLine();
+	    return input;
+	}
+	
+	public static int escribirEntero()
+	{
+		String input;
+		int res = 0;
+		while(scanIn.hasNextLine())
+		{
+			input = scanIn.nextLine();
+			try 
+			{	
+				res= Integer.parseInt(input);
+				break;
+			} 
+			catch (NumberFormatException e) 
+			{
+				System.out.println("No es un numero entero!!");
+			}
+		}
+		return res;
+	}
+	
+	public static double escribirDecimal()
+	{
+		String input;
+		double res = 0;
+		while(scanIn.hasNextLine())
+		{
+			input = scanIn.nextLine();
+			try 
+			{	
+				if(input.indexOf(".")==-1)
+				{
+					throw new NumberFormatException("No tiene decimales");
+				}
+				res= Double.parseDouble(input);
+				break;
+			} 
+			catch (NumberFormatException e) 
+			{
+				System.out.println("No es un numero decimal!!");
+			}
+		}
+		return res;
+		
+	}
+	
+	@Override
+	protected void finalize() throws Throwable {
+		scanIn.close();
+		super.finalize();
+	}
+	
+}

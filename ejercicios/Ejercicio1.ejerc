@@ -1,0 +1,16 @@
+
+// Saca los pares de 0 a 100
+
+entero contador = 0;
+decimal max = 3.5;
+texto saludo = "texto entero decimal";
+texto teclado = escribirTexto();
+mientras(contador < 100)
+{
+	si(contador%2 == 0)
+	{
+		pinta(saludo + " "+contador);
+	}
+	contador++;
+}
+pinta("fin");

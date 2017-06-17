@@ -1,0 +1,39 @@
+[
+	 {
+	 	"key" : "si",
+	 	"value" : "if" 
+	 },
+	 {
+		"key" : "mientras", 
+		"value" : "while"
+	},
+	{
+		"key" : "entero", 
+		"value" : "int"
+	},
+	{
+		"key" : "texto", 
+		"value" : "String"
+	},
+	{
+		"key" : "decimal",
+		"value" : "double"
+	},
+	{
+		"key" : "para",
+		"value" : "for"
+	},
+	{
+		"key" : "opcion",
+		"value" : "switch"
+	},
+	{
+		"key" : "caso",
+		"value" : "case"
+	},
+	{
+		"key" : "pinta",
+		"value" : "System.out.println"
+	}
+
+]
