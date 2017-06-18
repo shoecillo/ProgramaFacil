@@ -100,7 +100,7 @@ public class Translator {
 	public String replaceAll(String pgm)
 	{
 		pgm = "\n"+pgm;
-		String pat = "(\\n|^|\\t+)";
+		String pat = "(\\n|^|\\t+|\\.)";
 		List<JsonKeyVal> ls = readRules();
 		for(JsonKeyVal reg : ls)
 		{

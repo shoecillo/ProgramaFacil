@@ -34,6 +34,7 @@ public class ProcessCode extends Observable {
 				ClassLoader classLoader = getClass().getClassLoader();
 				
 				byte[] b =IOUtils.toByteArray(classLoader.getResourceAsStream("exec.bat"));
+				
 				FileUtils.writeByteArrayToFile(batFile, b);
 			}
 		} 
